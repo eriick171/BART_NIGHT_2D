@@ -1,0 +1,175 @@
+html, body
+{
+    margin:0;
+    border: 0;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.fundo {
+    width: 900px;
+    height: 500px;
+    padding-right: 300px;
+    margin-top: -700px;
+   
+}
+.fundo img {
+   width: 1200px;
+   height: 120%;
+   padding-top: 0px;
+  margin-top: -23px;
+  margin-left: -1px;
+}
+
+
+
+.bartman {
+    position: absolute;
+    width: 300px;
+    left: -68px;
+}
+.vida {
+    position: absolute;
+    width: 100px;
+    left: 170px;
+    top: 67px;
+}
+.elbarto {
+    position: absolute;
+    width: 100px;
+    left: 175px ;
+    top: 4px;
+}
+
+
+.tela
+{
+    width: 1200px;
+    height: 600px;
+    margin:0 auto;
+    border: 5px solid rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.tubo{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: -80px;
+    animation: tubo 3s infinite linear;
+    padding-bottom: 55px;
+}
+
+.bart{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 55px;
+}
+
+.nuvem1
+{
+    position: absolute;
+    width: 180px;
+    animation: nuvem1voando 20s infinite linear;
+    top: 200px;
+}
+
+.nuvem2
+{
+    position: absolute;
+    width: 200px;
+    animation: nuvem2voando 25s infinite linear;
+    top: 20px;
+}
+
+.nuvem3
+{
+    position: absolute;
+    width: 280px;
+    animation: nuvem3voando 30s infinite linear;
+    top: 120px;
+}
+
+.pular
+{
+    animation: pular 500ms ease-out;
+}
+
+@keyframes tubo{
+    from    {
+        right: -80px;
+    }
+
+    to
+    {
+        right: 100%;
+    }
+
+}
+
+@keyframes pular{
+    0%  {
+        bottom: 0;
+    }
+
+    50%
+    {
+        bottom: 150px;
+    }
+    90%{
+        bottom: 150px;
+    }
+
+    100%
+    {
+        bottom: 0;
+    }
+
+}
+
+@keyframes nuvem1voando
+{
+    from
+    {
+        right: -100px;
+    }
+
+    to
+    {
+        right: 100%;
+    }
+}
+
+@keyframes nuvem2voando
+{
+    from
+    {
+        right: -200px;
+    }
+
+    to
+    {
+        right: 100%;
+    }
+}
+
+@keyframes nuvem3voando
+{
+    from
+    {
+        right: -250px;
+    }
+
+    to
+    {
+        right: 100%;
+    }
+}
